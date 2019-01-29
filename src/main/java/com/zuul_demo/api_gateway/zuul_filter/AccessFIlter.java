@@ -36,7 +36,7 @@ public class AccessFIlter extends ZuulFilter {
         if(!accessToken.equals("flyme")){
             log.warn("Param Access Token is Right!");
             ctx.setSendZuulResponse(false);
-            ctx.setResponseStatusCode(2080);
+            ctx.setResponseStatusCode(505);
             return null;
         }
         log.info("Param Access Token Exist!");
