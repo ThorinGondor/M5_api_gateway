@@ -9,3 +9,5 @@
 
 注：在 Pom.xml 添加的Zuul网关依赖包不但包括核心zuul-core，也包括了ribbon、hystrix、actuator
     上述 URL 中的 ?accessToken=flyme 用于Zuul过滤器 AccessFilter，如果过滤成功则进行路由，如果过率失败则返回错误码
+
+ATTENTION! 本项目我们也使用了yaml文件配置来代替之前的properties文件配置，yaml文件配置能够使得 Zuul 路由的路由有优先配置
