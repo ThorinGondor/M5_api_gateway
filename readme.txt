@@ -7,5 +7,5 @@
 虽然说 feign-consumer 之前一直被当做消费者，但它本身的访问接口http://localhost:9001/feign-consumer也是服务者
 等同于 Zuul 网关使得我们可以使用该接口使用 feign-consumer 的服务
 
-注：Pom.xml添加的Zuul网关依赖包不但包括核心zuul-core，也包括了ribbon、hystrix、actuator
-?accessToken=flyme 用于Zuul过滤器 AccessFilter
+注：在 Pom.xml 添加的Zuul网关依赖包不但包括核心zuul-core，也包括了ribbon、hystrix、actuator
+    上述 URL 中的 ?accessToken=flyme 用于Zuul过滤器 AccessFilter，如果过滤成功则进行路由，如果过率失败则返回错误码
