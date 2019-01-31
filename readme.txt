@@ -8,3 +8,4 @@
 等同于 Zuul 网关使得我们可以使用该接口使用 feign-consumer 的服务
 
 注：Pom.xml添加的Zuul网关依赖包不但包括核心zuul-core，也包括了ribbon、hystrix、actuator
+?accessToken=flyme 用于Zuul过滤器 AccessFilter
